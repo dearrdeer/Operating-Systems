@@ -1,0 +1,142 @@
+    1  sudo apt update
+    2  sudo add-apt-repository ppa:costales/unity-webapps-telegram 
+    3  sudo apt-get update
+    4  sudo apt install docker.io
+    5  sudo apt install docker-compose
+    6  ls
+    7  cd Desktop/
+    8  ls
+    9  cd php/
+   10  ls
+   11  cd pcms-web/
+   12  docker-compose -f docker-compose-test.yml up -d
+   13  sudo docker-compose -f docker-compose-test.yml up -d
+   14  docker exec -it -u dev test_pcms_php bash
+   15  sudo docker exec -it -u dev test_pcms_php bash
+   16  cd ..
+   17  ls
+   18  cd Загрузки/
+   19  ls
+   20  cd PhpStorm-191.7141.52/
+   21  ls
+   22  cd bin/
+   23  ls
+   24  ./phpstorm.sh 
+   25  cd Desktop/php/pcms-web/
+   26  docker ps
+   27  sudo docker ps
+   28  cd Desktop/php/
+   29  cd pcms-web/
+   30  ls
+   31  sudo docker ps
+   32  docker exec -it -u dev test_pcms_php bash
+   33  sudo docker exec -it -u dev test_pcms_php bash
+   34  cd Desktop/php/pcms-web/
+   35  sudo docker ps
+   36  cd Desktop/php/pcms-web/
+   37  sudo docker ps
+   38  cd Desktop/php/pcms-web/
+   39  sudo docker ps
+   40  cd Desktop/php/pcms-web/\
+   41  cd Desktop/php/pcms-web/
+   42  sudo docker ps
+   43  ls
+   44  docker -help
+   45  docker exec --help
+   46  docker exec -it -u dev test_pcms_php bash
+   47  sudo docker exec -it -u dev test_pcms_php bash
+   48  cd Desktop/php/pcms-web/
+   49  sudo docker ps
+   50  cd Desktop/php/pcms-web/
+   51  sudo docker ps
+   52  cd Desktop/php/pcms-web/
+   53  sudo docker ps
+   54  git status
+   55  git branch 
+   56  git remote -v
+   57  git push origin feature/questions 
+   58  git status
+   59  git commit "Basic questions for tasks"
+   60  git status
+   61  git remote -v
+   62  cd Desktop/php/pcms-web/
+   63  ls
+   64  git status
+   65  git push -u origin feature/questions 
+   66  git remote -v
+   67  git commit -a
+   68  git config --global user.email a.baykov@innopolis.university
+   69  git config --global user.name Ayaz Baykov
+   70  git commit -a
+   71  git push
+   72  cd ..
+   73  mkdir py
+   74  ls
+   75  cd py
+   76  ls
+   77  sudo apt install python3
+   78  sudo apt install python-pip3
+   79  sudo apt install pip-python3
+   80  sudo apt install pip-python
+   81  sudo apt install pip3-python
+   82  cd Desktop/py/
+   83  sudo apt install python-pip
+   84  pip install Django==2.2.3
+   85  pip3 install Django==2.2.3
+   86  sudo apt install python3-pip
+   87  pip3 install Django==2.2.3
+   88  python3
+   89  cd Desktop/py/
+   90  ls
+   91  git clone https://github.com/gothinkster/django-realworld-example-app.git
+   92  ls
+   93  cd django-realworld-example-app/
+   94  ls
+   95  cd ..
+   96  ls
+   97  django-admin startproject mysite
+   98  ls
+   99  cd mysite/
+  100  ls
+  101  cd Desktop/py/fastpoll/
+  102  ls
+  103  python3 manage.py migrate
+  104  python3 manage.py makemigrations polls
+  105  python3 manage.py migrate
+  106  python3 manage.py createsuperuser
+  107  cd Desktop/py/
+  108  django-admin startproject fastpoll
+  109  ls
+  110  cd fastpoll/
+  111  ls
+  112  python3 manage.py startapp polls
+  113  ls
+  114  python3 manage.py startserver
+  115  python3 manage.py runserver
+  116  cd 
+  117  ls
+  118  cd ~
+  119  ;s
+  120  ls
+  121  cd ..
+  122  ls
+  123  cd usr/bin/
+  124  ls
+  125  grep gcc 
+  126  grep -iw 'gcc' 
+  127  y
+  128  grep 'gcc' 
+  129  ls -l
+  130  ls -d
+  131  ls -f
+  132  ls
+  133  cd ..
+  134  grep 'gcc' bin
+  135  grep 'gcc' bin/
+  136  ls -1 *gcc*
+  137  cd bin/
+  138  ls -1 *gcc*
+  139  ls -1 -r *gcc*
+  140  ls -1 -r *gcc* ~/week1/ex1.txt
+  141  ls -1 -r *gcc* > ~/week1/ex1.txt
+  142  history > ~/week1/ex2.txt
