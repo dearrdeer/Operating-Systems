@@ -1,0 +1,7 @@
+What's the difference between physical and virtual memory?
+
+Answer:
+
+I would say that the virtual memory is something like a wrapper for the main physical memory.
+Because it is larger than main memory and makes special mapping from some virtual, abstract addresses to the real ones.
+As virtual memory is much bigger than main, when it stores the heavy processes it often swappes some memory to the hard disk and back. 
