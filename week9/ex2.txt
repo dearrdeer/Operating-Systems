@@ -1,0 +1,2 @@
+In my implementation of ageing algorithm I use conters with 16 bit size.
+So after 16 ticks all the counters will turn to 0, so to make hits/miss ratio decreased all I had to do was put distinct refernces in each sequence of 16 references, and to make it increased I just increased count of repeating references in the sequences of 16 refernces.
