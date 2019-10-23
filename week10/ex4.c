@@ -16,7 +16,7 @@ int main(){
         entries[i] = entry;
         i++;
     }
-
+//Sort entries according their I_NODE
     int n = i;
     for(int i = 0; i < n-1; i++){
     	int min_i_node = entries[i]->d_ino;
@@ -31,7 +31,7 @@ int main(){
     	entries[i] = entries[minind];
     	entries[minind] = tempent;
     }
-    
+   //Find  
     for(int i = 0; i < n; i++){
     	int i_node = entries[i]->d_ino;
     	int j = i;
