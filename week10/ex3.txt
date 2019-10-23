@@ -1,0 +1,48 @@
+1) After removing execute for all:
+
+$ ls -l
+итого 20
+-rw-r--r-- 3 ayaz ayaz  56 окт 24 00:25 _ex1_1.txt
+-rw-r--r-- 3 ayaz ayaz  56 окт 24 00:25 _ex1_2.txt
+-rw-r--r-- 3 ayaz ayaz  56 окт 24 00:25 _ex1.txt
+-rw-r--r-- 1 ayaz ayaz  56 окт 24 00:25 ex1.txt
+-rw-r--r-- 1 ayaz ayaz 312 окт 24 00:33 ex2.txt
+-rw-r--r-- 1 ayaz ayaz   0 окт 24 00:34 _ex3.txt
+-rw-r--r-- 1 ayaz ayaz   0 окт 24 00:38 ex3.txt
+
+2) After granting all permissions to owner and others:
+
+$ chmod u=rwx _ex3.txt
+
+$ chmod o=rwx _ex3.txt
+
+$ ls -l
+итого 20
+-rw-r--r-- 3 ayaz ayaz  56 окт 24 00:25 _ex1_1.txt
+-rw-r--r-- 3 ayaz ayaz  56 окт 24 00:25 _ex1_2.txt
+-rw-r--r-- 3 ayaz ayaz  56 окт 24 00:25 _ex1.txt
+-rw-r--r-- 1 ayaz ayaz  56 окт 24 00:25 ex1.txt
+-rw-r--r-- 1 ayaz ayaz 312 окт 24 00:33 ex2.txt
+-rwxr--rwx 1 ayaz ayaz   0 окт 24 00:34 _ex3.txt <====== This is the file whose permissions we changed
+-rw-r--r-- 1 ayaz ayaz   0 окт 24 00:38 ex3.txt
+
+3) After changing group=user
+
+$ chmod g=u _ex3.txt 
+
+$ ls -l
+итого 32
+-rw-r--r-- 3 ayaz ayaz   56 окт 24 00:25 _ex1_1.txt
+-rw-r--r-- 3 ayaz ayaz   56 окт 24 00:25 _ex1_2.txt
+-rw-r--r-- 3 ayaz ayaz   56 окт 24 00:25 _ex1.txt
+-rw-r--r-- 1 ayaz ayaz   56 окт 24 00:25 ex1.txt
+-rw-r--r-- 1 ayaz ayaz  312 окт 24 00:33 ex2.txt
+-rwxrwxrwx 1 ayaz ayaz    0 окт 24 00:34 _ex3.txt
+-rw-r--r-- 1 ayaz ayaz  970 окт 24 00:41 ex3.txt
+-rw-r--r-- 1 ayaz ayaz   88 окт 24 00:49 ex4.c
+
+4)
+
+660 means rw for User, rw for Group, and no permissions for Other
+775 means all permissions for User and Group, and r and x for Other
+777 means all permissions for all 

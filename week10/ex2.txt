@@ -1,0 +1,18 @@
+//I creates file.txt in folder week2
+//First lines are commands I wrote and second (without $) are outputs
+
+
+$ link ../week2/file.txt _ex2.txt
+
+$ ls -i ../week2/file.txt 
+4854876 ../week2/file.txt
+
+$ find -inum 4854876
+./_ex2.txt
+
+$ find ../week2/ -inum 4854876
+./file.txt
+
+$ find -inum 4854876 -exec rm {} \;
+
+
