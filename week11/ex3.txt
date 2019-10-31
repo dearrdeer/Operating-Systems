@@ -1,0 +1,17 @@
+STDOUT is line buffered.
+
+So in 1 case:
+	Printf command buffers the string "Hello", but do not outputs it;
+	After fork we will have 2 processes with 2 buffered "Hello" string
+	Then printf('\n') just outputs buffer for every process that's why output is
+	Hello
+	Hello
+
+In 2 case:
+	Printf command will print word "Hello" BEFORE fork, as it end with line separator.
+	That's why after fork we will have 2 process which will only create empty line and output will be:
+	Hello
+
+
+
+	
