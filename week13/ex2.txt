@@ -1,0 +1,12 @@
+1. Deadlock Prevention:
+When designing system with any deadlock situations to be impossible, there at least one of the coditions won't be held:
+Mutual exclusion, hold and wait, no preemption, circular wait.
+Disable mutual excusion: This case is not possible for any systems. Because making all resources sharable is unsafe and deadlock won't be prevented. Useful only in specific (maybe embedded) systems.
+Disable Hold-and-Wait: First approach is that process gets all recourses it needs before execution (Or waits untill it's possible) This will result in reduced throuhgput as resources do not used effectively. Second approach is that process can request resource if only it is not holding anymore. This can lead to a starvation, as a single process can wait a very long time to get only 1 resource. 
+Disable no preemption: If a process request for a resource which is held by another waiting resource, then the resource may be preempted from the other waiting resource, it is nearly immposible because resource can be preempted if only the current state can be saved.
+Circular wait: We will have to everytime check resource numbers, so overall performance will be lowered.
+Conclusion: We see that most of deadlock prevention approaches leads to lowered performance, so that can be made only in specific systems, where the performance does not plays a key role, or there is not much resources and they are not complicated.
+2. Deadlock avoidance 
+To use this approach we have to know which resoucres will be needed to a process before its execution. Also the system, again, will suffer from low performance. This approach may be used only in systems, which has a constant count of process and the system knows everything about them.
+3. Deadlock recovery.
+Although deadlock detection and recovery takes time, the system facing it rarely, so overall performace is not lowered. But deadlock recovery may lead to data loss. So, this approach is the most suitable for systems for which efficient performance plays key role.
